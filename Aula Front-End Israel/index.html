@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyApp</title>
+    <!-- link para o BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="container my-5">
+        <div class="bg-primary p-4 mt-3 rounded">
+            <h1 class="display-5 text-light">Criar Conta</h1>
+        </div>
+
+        <form id="criarConta" name="criarConta" method="get" action="">
+            <!-- iniciando o grid do BS -->
+            <section class="row">
+                
+                <div class = "my-2 col-md-6">
+                    <label for="usuario" class="form-label">Usuário</label>
+                    <input type="text" id="usuario" name="usuario" class="form-control" minlength="10" maxlength="20" placeholder="Ex: username12345" required>
+                </div>
+
+
+                <div class="my-2 col-md-6">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" id = "senha" name="senha" class="form-control" minlength="5" maxlength="12" placeholder="Ex: !@1123Hjkd" required>
+                </div>
+
+                <div class="my-2 col-md-4">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Ex: Gatinho123@email.com" required>
+
+                </div>
+
+                <div class="my-2 col-md-4">
+                    <label for="dataCadastro" class="form-label">Data do Cadastro</label>
+                    <input type="date" id = "dataCadastro" name="dataCadastro" class="form-control" required>
+                    
+                </div>
+
+                <div class="my-3 col-md-4">
+                    <label for="tipoConta">Tipo de Conta</label>
+                    <select name="tipoConta" id="tipoConta" class="form-select">
+                    <option value="Free">Free</option>
+                    <option value="Basic">Basic</option>
+                    <option value="Premium">Premium</option>
+                    <option value="Plus">Plus</option>
+                    </select>
+                </div>
+
+                <div class="my-4 d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary">Criar Conta</button>
+                </div>
+
+            </section>
+            <!-- Finalizar o grid o BS -->
+
+
+
+        </form>
+
+
+
+    </section>
+</body>
+
+</html>
